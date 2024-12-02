@@ -13,7 +13,7 @@ def parte_erguei_as_maos(repeticoes: int = 1) -> list[str]:
     return trecho * repeticoes
 
 
-def parte_animaizinhos() -> list[str]:
+def parte_animaizinhos(repeticoes: int = 1) -> list[str]:
     """Retorna o trecho da parte 'Os animaizinhos subiram de dois em dois'."""
     base: list[str] = [
         "Os animaizinhos subiram de dois em dois",
@@ -22,10 +22,21 @@ def parte_animaizinhos() -> list[str]:
         "E os passarinhos, como os filhos do Senhor",
         "\n",
     ]
-    return base
+    return base * repeticoes
 
 
-def parte_braços_movimentos() -> list[str]:
+def parte_constroi_arca(repeticoes: int = 1):
+    base: list[str] = [
+        "Deus disse a Noé: Constrói uma arca",
+        "Deus disse a Noé: Constrói uma arca",
+        "Que seja feita",
+        "De madeira para os filhos do Senhor",
+        "\n",
+    ]
+    return base * repeticoes
+
+
+def parte_braços_movimentos(repeticoes: int = 1) -> list[str]:
     """Retorna o trecho da parte 'O Senhor tem muitos filhos'."""
     base: list[str] = [
         "O Senhor tem muitos filhos",
@@ -33,7 +44,7 @@ def parte_braços_movimentos() -> list[str]:
         "Eu sou um deles, você também",
         "Louvemos ao Senhor",
     ]
-    return base
+    return base * repeticoes
 
 
 def exibir_letra_com_delay(letra: list[str], delay: float | int) -> None:
