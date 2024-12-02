@@ -5,7 +5,8 @@ def exibir_menu() -> str:
     print("Menu Principal:")
     print("1 - Reproduzir a música inteira")
     print("2 - Reproduzir a parte 'Erguei as Mãos'")
-    print("3 - Reproduzir a parte 'O Senhor tem Muitos Filhos'")
-    print("4 - Sair")
+    print("3 - Reproduzir a parte 'Deus disse a Noé...'")
+    print("4 - Reproduzir a parte 'O Senhor tem Muitos Filhos'")
+    print("5 - Sair")
     escolha: str = input("\nEscolha uma opção: ").strip()
     return escolha
