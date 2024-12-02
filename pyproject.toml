@@ -1,0 +1,13 @@
+[project]
+name = "desafio-acelera-zg"
+authors = [{ name = "Kevin Halley", email = "keuwey@gmail.com" }]
+version = "0.1.0"
+description = "Solução ao desafio da Acelera ZG"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pygame>=2.6.1",
+    "rich>=13.9.4",
+]
+[project.optional-dependencies]
+dev = ["ruff","mypy"]
