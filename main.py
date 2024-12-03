@@ -32,6 +32,7 @@ def reproducao(audio_file: str, start: float, end: float = 296.0) -> None:
     duracao = end - start
     time.sleep(duracao)
     pygame.mixer.music.stop()
+    pygame.mixer.music.unload()
 
 
 def reproduzir_letra(audio_file: str) -> None:
@@ -99,15 +100,15 @@ def reproduzir_letra(audio_file: str) -> None:
             )
 
             reproducao(audio_file, start=0.0)
-            pygame.mixer.music.stop()
-            pygame.mixer.music.unload()
         elif escolha == "2":
             exibir_letra_com_delay(parte_erguei_as_maos(), DELAY)
             reproducao(audio_file, start=21.7, end=37.0)
-            pygame.mixer.music.unload()
         elif escolha == "3":
             exibir_letra_com_delay(parte_constroi_arca(), DELAY)
-            reproducao(audio_file, start=80.0, end=94.0)
+            reproducao(audio_file, start=80.0, end=93.3)
+        elif escolha == "4":
+            exibir_letra_com_delay(parte_braços_movimentos(), DELAY)
+            reproducao(audio_file, start=140.7, end=153.7)
 
     except pygame.error as e:
         print(f"Erro ao carregar ou reproduzir o áudio: {e}")
