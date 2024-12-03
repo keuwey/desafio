@@ -36,6 +36,14 @@ def parte_constroi_arca(repeticoes: int = 1):
     return base * repeticoes
 
 
+def por_isso() -> list[str]:
+    return ["Por isso...!"]
+
+
+def separador() -> list[str]:
+    return ["E atenção agora, porque"]
+
+
 def parte_braços_movimentos(repeticoes: int = 1) -> list[str]:
     """Retorna o trecho da parte 'O Senhor tem muitos filhos'."""
     base: list[str] = [
@@ -43,6 +51,7 @@ def parte_braços_movimentos(repeticoes: int = 1) -> list[str]:
         "Muitos filhos ele tem",
         "Eu sou um deles, você também",
         "Louvemos ao Senhor",
+        "\n",
     ]
     return base * repeticoes
 
