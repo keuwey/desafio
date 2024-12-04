@@ -1,3 +1,4 @@
+import time
 from typing import List
 
 
@@ -19,6 +20,14 @@ def parte_erguei_as_maos(repeticoes: int = 1) -> List[str]:
     )
 
 
+def por_isso() -> list[str]:
+    return ["Por isso...!"]
+
+
+def separador() -> list[str]:
+    return ["E atenção agora, porque", "\n"]
+
+
 def parte_animaizinhos(animal1: str, animal2: str, repeticoes: int = 1) -> List[str]:
     return gerar_parte(
         [
@@ -30,3 +39,51 @@ def parte_animaizinhos(animal1: str, animal2: str, repeticoes: int = 1) -> List[
         ],
         repeticoes,
     )
+
+
+def parte_constroi_arca(repeticoes: int = 1) -> list[str]:
+    """
+    Retorna o trecho da parte 'Deus disse a Noé'.
+    Parameters:
+        repeticoes: Número de vezes que o verso irá se repetir
+    """
+    return gerar_parte(
+        [
+            "Deus disse a Noé: Constrói uma arca",
+            "Deus disse a Noé: Constrói uma arca",
+            "Que seja feita",
+            "De madeira para os filhos do Senhor",
+            "\n",
+        ],
+        repeticoes,
+    )
+
+
+def parte_braços_movimentos(repeticoes: int = 1) -> list[str]:
+    """
+    Retorna o trecho da parte 'O Senhor tem muitos filhos'.
+    Parameters:
+        repeticoes: Número de vezes que o verso irá se repetir
+    """
+    return gerar_parte(
+        [
+            "O Senhor tem muitos filhos",
+            "Muitos filhos ele tem",
+            "Eu sou um deles, você também",
+            "Louvemos ao Senhor",
+            "\n",
+        ],
+        repeticoes,
+    )
+
+
+def exibir_letra_com_delay(letra: list[str], delay: float | int) -> None:
+    """
+    Exibe cada linha da letra no terminal com um intervalo de tempo (delay).
+    Parameters:
+        letra: Lista de strings representando a letra.
+        delay: Tempo em segundos entre cada linha.
+    """
+    for linha in letra:
+        print(linha)
+        time.sleep(delay)
