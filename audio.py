@@ -3,7 +3,7 @@ import time
 import pygame
 
 
-def reproducao(audio_file: str, start: float, end: float = 296.0) -> None:
+def reproducao(audio_file: str, start: float, end: float = 296.0):
     """Carrega e inicia a reprodução de um áudio a partir de um ponto específico."""
     if start >= end:
         raise ValueError("O ponto inicial deve ser menor que o ponto final.")

@@ -11,4 +11,4 @@ def exibir_menu() -> str:
         print()
         if escolha in {"1", "2", "3", "4", "5"}:
             return escolha
-        print("\nOpção inválida. Tente novamente.\n")
+        raise TypeError("Opção inválida. Tente novamente.\n")

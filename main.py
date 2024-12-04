@@ -66,9 +66,9 @@ def reproduzir_letra(audio_file: str) -> None:
             exibir_letra_com_delay(parte_braços_movimentos(), DELAY),
             reproducao(audio_file, start=140.7, end=153.7),
         ),
+        "5": lambda: print("Saindo..."),
     }
-    if escolha in partes:
-        partes[escolha]()
+    partes[escolha]()
 
 
 reproduzir_letra("erguei_as_maos.mp3")

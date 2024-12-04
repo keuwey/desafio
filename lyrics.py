@@ -77,7 +77,7 @@ def parte_braços_movimentos(repeticoes: int = 1) -> list[str]:
     )
 
 
-def exibir_letra_com_delay(letra: List[str], delay: float | int) -> None:
+def exibir_letra_com_delay(letra: List[str], delay: float | int):
     """
     Exibe cada linha da letra no terminal com um intervalo de tempo (delay).
     Parameters:
