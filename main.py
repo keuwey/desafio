@@ -17,9 +17,9 @@ pygame.mixer.init()
 DELAY: float | int = 0.1
 MOVIMENTOS: list[str] = [
     "Braço direito",
-    "braço esquerdo\n",
+    "Braço esquerdo\n",
     "Perna direita",
-    "perna esquerda\n",
+    "Perna esquerda\n",
     "Balança a cabeça",
     "dá uma voltinha\n",
     "Dá um pulinho",
@@ -27,7 +27,7 @@ MOVIMENTOS: list[str] = [
 ]
 
 
-def exibir_movimentos(movimentos: list[str]) -> None:
+def exibir_movimentos(movimentos: list[str]):
     """Exibe os movimentos de forma dinâmica."""
     for i in range(1, len(movimentos) + 1):
         exibir_letra_com_delay(parte_braços_movimentos(), DELAY)
@@ -69,10 +69,6 @@ def reproduzir_letra(audio_file: str) -> None:
     }
     if escolha in partes:
         partes[escolha]()
-    elif escolha == "5":
-        print("Saindo...")
-    else:
-        print("Opção inválida.")
 
 
 reproduzir_letra("erguei_as_maos.mp3")

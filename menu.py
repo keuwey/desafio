@@ -8,6 +8,7 @@ def exibir_menu() -> str:
         print("4 - Reproduzir a parte 'O Senhor tem Muitos Filhos'")
         print("5 - Sair")
         escolha = input("\nEscolha uma opção: ").strip()
+        print()
         if escolha in {"1", "2", "3", "4", "5"}:
             return escolha
-        print("Opção inválida. Tente novamente.")
+        print("\nOpção inválida. Tente novamente.\n")
